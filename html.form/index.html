@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1 id="titulo">Formulário de Inscrição</h1>
+    <form action="" align="center" width="100%">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="nome" required />
+      <br />
+      <br />
+      <label for="telefone">Telefone:</label>
+      <input
+        type="tel"
+        id="telefone"
+        name="number"
+        pattern="[0-9] {10}"
+        placeholder="Apenas números"
+        required
+      />
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required />
+    </form>
+    <br />
+    <div align="center">
+      <button type="submit">Enviar</button>
+    </div>
+  </body>
+</html>
